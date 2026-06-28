@@ -1,4 +1,4 @@
-# RegistryLookup-bdebfd
+# RegistryLookup-74c9a5
 
 A Java RegistryLookup utility.
 

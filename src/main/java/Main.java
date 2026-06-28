@@ -1,5 +1,5 @@
 public class Main {
-    private static final String SVC = "RegistryLookup_bdebfd";
+    private static final String SVC = "RegistryLookup_74c9a5";
     static class AppException extends RuntimeException { final String code; AppException(String code, String msg) { super(msg); this.code = code; } }
     static class NotFound extends AppException { NotFound(String id) { super("NOT_FOUND", "Resource " + id + " not found"); } }
     static class Conflict extends AppException { Conflict(String id) { super("CONFLICT", "Resource " + id + " already exists"); } }
